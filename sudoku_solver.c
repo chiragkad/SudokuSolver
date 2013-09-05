@@ -17,7 +17,7 @@ int main()
 					{0,3,2,4,0,0,0,0,8},
 					{0,0,4,1,0,0,3,0,0},
 					{0,6,0,0,0,8,0,0,9}};
-	int i,j;
+	int n,j;
 	solver(sud,0,0);
 	//Print Solved Grid
 	if( filled(sud, 0, 0) )
@@ -42,7 +42,7 @@ int solver(int sud[][9],int r,int c)
 {
 	int i,a,b,flag=0;
 	//Base condition when recursion should stop
-	if(filled(sud,r,c))		
+	if(filled(sud,r,c))
 		return 1;
 	//Checks for the next empty square
 	for(a=r;a<9;a++)
@@ -65,7 +65,7 @@ int solver(int sud[][9],int r,int c)
 	r=a;
 	c=b;
 	//Check for permutations
-	//Recursive backtracking code 
+	//Recursive backtracking code
 	for(i=1;i<=9;i++)
 	{
 		if(place(sud,r,c,i))
