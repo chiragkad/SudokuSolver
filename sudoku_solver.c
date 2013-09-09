@@ -17,7 +17,7 @@ int main()
 					{0,3,2,4,0,0,0,0,8},
 					{0,0,4,1,0,0,3,0,0},
 					{0,6,0,0,0,8,0,0,9}};
-	int n,j;
+	int i,j;
 	solver(sud,0,0);
 	//Print Solved Grid
 	if( filled(sud, 0, 0) )
